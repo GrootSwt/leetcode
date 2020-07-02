@@ -6,22 +6,6 @@ package com.swt.code;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author 孙文涛
- */
-class ListNode{
-	int val;
-	ListNode next;
-	ListNode(int x){
-		this.val = x;
-	}
-	@Override
-	public String toString() {
-		return "ListNode [val=" + val + ", next=" + next + "]";
-	}
-	
-	
-}
 public class RemoveNthFromEnd {
 	// 倒数第n个节点是正数的所有节点减去n加上1
 	public ListNode removeNthFromEnd(ListNode head, int n) {

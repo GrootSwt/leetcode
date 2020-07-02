@@ -194,3 +194,17 @@ com.swt.code.RemoveNthFromEnd.java
 ```
 com.swt.code.IsValid.java
 ```
+
+### 13、合并两个有序的链表
+
+#### （1）算法描述
+
+```
+将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
+```
+
+#### （2）算法实现类位置
+
+```
+com.swt.code.MergeTwoLists.java
+```
