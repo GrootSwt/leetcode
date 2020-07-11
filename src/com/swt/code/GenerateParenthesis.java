@@ -14,6 +14,12 @@ public class GenerateParenthesis {
         return result;
     }
 
+    /**
+     * 暴力破解法
+     * @param current   每一组解法
+     * @param i         下标
+     * @param result    返回值
+     */
     public void generateAll(char[] current, int i, List<String> result) {
         if (i == current.length) {
             if (validate(current)) {
@@ -27,6 +33,11 @@ public class GenerateParenthesis {
         }
     }
 
+    /**
+     * 校验是否符合规范
+     * @param current   需要校验的一组
+     * @return  返回是否符合规范
+     */
     public boolean validate(char[] current) {
         int flag = 0;
         for (char temp :
@@ -41,11 +52,7 @@ public class GenerateParenthesis {
             }
         }
 
-        if (flag == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return flag == 0;
     }
 
     public static void main(String[] args) {
