@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 /*
  * 罗马数字转整数
+=======
+/**
+ * 
+>>>>>>> 7f3c9316353233b138b5b3948c16a5a75995340f
  */
 package com.swt.code;
 
@@ -13,7 +18,11 @@ public class RomanToInt {
 		int[] values02 = { 900, 400, 90, 40, 9, 4 };
 		String[] romans02 = { "CM", "CD", "XC", "XL", "IX", "IV" };
 		int result = 0;
+<<<<<<< HEAD
 		boolean flag;
+=======
+		boolean flag = false;
+>>>>>>> 7f3c9316353233b138b5b3948c16a5a75995340f
 		while (!s.isEmpty()) {
 			flag = false;
 			// 先判断长度是否大于两位

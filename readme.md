@@ -235,6 +235,7 @@ com.swt.code.GenerateParenthesis.java
 
 ```
 com.swt.code.MergeKLists.java
+<<<<<<< HEAD
 ```
 #### （1）算法描述
 
@@ -248,3 +249,6 @@ com.swt.code.MergeKLists.java
 ```
 com.swt.code.SwapPairs.java
 ```
+=======
+```
+>>>>>>> 7f3c9316353233b138b5b3948c16a5a75995340f

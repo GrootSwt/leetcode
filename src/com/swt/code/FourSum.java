@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 /*
  *  四数之和
+=======
+/**
+ *
+>>>>>>> 7f3c9316353233b138b5b3948c16a5a75995340f
  */
 package com.swt.code;
 
@@ -18,6 +23,7 @@ public class FourSum {
 
         for (int i = 0; i < nums.length - 3; i++) {
             // 当前值和下一个值相同的时候应该舍去
+<<<<<<< HEAD
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
@@ -27,6 +33,15 @@ public class FourSum {
                 if (j > i + 1 && nums[j] == nums[j - 1]) {
                     continue;
                 }
+=======
+            if (i > 0 && nums[i] == nums[i - 1])
+                continue;
+
+            for (int j = i + 1; j < nums.length - 2; j++) {
+                // 当前值和上一个值相同的时候应该舍去
+                if (j > i + 1 && nums[j] == nums[j - 1])
+                    continue;
+>>>>>>> 7f3c9316353233b138b5b3948c16a5a75995340f
                 // 设置左右指针
                 int left = j + 1;
                 int right = nums.length - 1;
@@ -42,6 +57,7 @@ public class FourSum {
                         list.add(temp);
 
                         // 当前值和下一个值相同的时候应该舍去
+<<<<<<< HEAD
                         while (left < right && nums[left] == nums[left + 1]) {
                             left++;
                         }
@@ -50,13 +66,25 @@ public class FourSum {
                         while (left < right && nums[right] == nums[right - 1]) {
                             right--;
                         }
+=======
+                        while (left < right && nums[left] == nums[left + 1])
+                            left++;
+
+                        // 当前值和上一个值相同的时候应该舍去
+                        while (left < right && nums[right] == nums[right - 1])
+                            right--;
+>>>>>>> 7f3c9316353233b138b5b3948c16a5a75995340f
 
                         left++;
                         right--;
 
                     } else if (sum < target) {
                         left++;
+<<<<<<< HEAD
                     } else {
+=======
+                    } else if (sum > target) {
+>>>>>>> 7f3c9316353233b138b5b3948c16a5a75995340f
                         right--;
                     }
                 }
